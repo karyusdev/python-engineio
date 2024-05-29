@@ -52,8 +52,8 @@ class ASGIApp:
         if self.engineio_path is not None:
             if not self.engineio_path.startswith('/'):
                 self.engineio_path = '/' + self.engineio_path
-            if not self.engineio_path.endswith('/'):
-                self.engineio_path += '/'
+            #if not self.engineio_path.endswith('/'):
+                #self.engineio_path += '/'
         self.static_files = static_files or {}
         self.on_startup = on_startup
         self.on_shutdown = on_shutdown
